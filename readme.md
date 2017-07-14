@@ -1,8 +1,6 @@
 # React Weather Application 
 
-## Currently the demo does not work due to an API migration. 
-## Open Weather Map auto-corrected any city you would try to pass. 
-## Transitioning to Google Maps API. 
+## Currently the demo does not work due to an API migration. Open Weather Map auto-corrected any city you would try to pass. The app will transition to use the Google Maps API. 
 
 View a live demo [here](http://blooming-brook-44749.herokuapp.com/#/?_k=r0wd8q)
 

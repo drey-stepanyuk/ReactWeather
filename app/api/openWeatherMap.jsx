@@ -15,6 +15,7 @@ module.exports = {
   getTemp: function (location){
     return this.getLatLongForLocation(location).then(this.getTempFromDarkSkies, this.onError);
   },
+
   getLatLongForLocation: function (location) {
     console.log(location);
     var encodedLocation = encodeURIComponent(location);
@@ -34,6 +35,7 @@ module.exports = {
       throw new Error('Unable to get weather for that location.');
     });
   },
+  
   getTempFromDarkSkies: function (geoCoordinates){
     console.log(geoCoordinates.lat);
     console.log(geoCoordinates.lng);

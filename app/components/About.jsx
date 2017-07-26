@@ -18,9 +18,16 @@ var About = (props) => {
           Javascript framework used for the app.
         </li>
         <li>
-          <a href="http://openweathermap.org">Open Weather Map</a> - I utilized
+          <strike><a href="http://openweathermap.org">Open Weather Map</a> - I utilized
           the API from Open Weather Map to search and retrieve weather data for
-          the desired city.
+          the desired city.</strike>
+        </li>
+        <li>
+          <a href="https://www.wunderground.com/">Weather Underground</a> - I
+          changed the API call to Weather Underground since Open Weather Map would
+          always return a value for any input. Even if you entered "asdasd" you
+          would get a value since it returns Global cities and tries to autocorrect
+          input.
         </li>
         <li>
           <a href="https://github.com/juicydrey/ReactWeather">GitHub</a> - Source

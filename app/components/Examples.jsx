@@ -8,13 +8,13 @@ var Examples = (props) => {
       <p>Here are a few example locations to try out: </p>
       <ol>
         <li>
-          <Link to='/?location=Charlotte'>Charlotte, NC</Link>
+          <Link to='/?location=Charlotte'>Charlotte</Link>
         </li>
         <li>
-          <Link to='/?location=London'>London, United Kingdom</Link>
+          <Link to='/?location=Cary'>Cary</Link>
         </li>
         <li>
-          <Link to='/?location=Toronto'>Toronto, Canada</Link>
+          <Link to='/?location=Asheville'>Asheville</Link>
         </li>
       </ol>
     </div>

@@ -14,19 +14,18 @@ module.exports = {
   },
 
   getTempFromWunderground: function (location) {
-    console.log(location);
     var encodedLocation = encodeURIComponent(location);
+
     // Getting the data from WUnderground
     var wUndergroundRequestUrl = `${WUNDERGROUND_URI}${encodedLocation}.json`;
 
     return axios.get(wUndergroundRequestUrl).then(function (response){
-      if (!response.current_observation) {
+      console.log(response);
+      if (!response.data.current_observation) {
         // handle exceptions/errors for undefined locations
-        console.log("errors");
-        throw new Error(response.error.description);
+        throw new Error(response.data.response.error.description);
       } else {
-        console.log(response.current_observation.temp_f);
-        return response.current_observation.temp_f;
+        return response.data.current_observation.temp_f;
       }
     }, function (err) {
       throw new Error('Unable to get weather for that location.');

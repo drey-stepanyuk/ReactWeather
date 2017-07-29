@@ -17,7 +17,7 @@ module.exports = {
   ],
   output: {
     path: __dirname,
-    filename: './public/bundle.js'
+    filename: './public/bundle.js',
   },
   resolve: {
     root: __dirname,
@@ -45,7 +45,7 @@ module.exports = {
         },
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/
-      }
+      },
     ]
   },
 

@@ -16,6 +16,9 @@ input[type=search] {
   box-shadow: none;
 }
 
-#forest {
-  background-image: url('/app/images/forest.jpg');
+#sig {
+  left: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }

@@ -6,7 +6,7 @@ This weather application has been a great learning experience and I've thoroughl
 
 The following features are used within the application:
 * ~~Open Weather Map API~~
-* Underground Weather API
+* Weather Underground API
 * Modals
 * Foundation framework
 * React framework
